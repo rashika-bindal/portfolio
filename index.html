@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rashika Bindal | Product Manager | AI, Commerce & Consumer Products</title>
+<meta name="description" content="Product Manager building AI-powered consumer products. Currently founding a 0-to-1 consumer AI venture in stealth. 6+ years shipping products at American Express, Citibank and HSBC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ivory:#FBF9F7; --ink:#1C1917; --berry:#A61E4D; --berry-deep:#7A163A;
+  --blush:#F6E7EC; --sand:#F1ECE6; --grey:#57534E; --line:#E5DFD8;
+  --disp:'Fraunces',Georgia,serif; --body:'Figtree',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--ivory);color:var(--ink);line-height:1.6;font-size:16.5px}
+h1,h2,h3{font-family:var(--disp);font-weight:500;line-height:1.15}
+a{color:var(--berry);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--berry);outline-offset:3px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--berry)}
+section{padding:72px 0}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:50;background:rgba(251,249,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.logo{font-family:var(--disp);font-size:20px;font-weight:600;color:var(--ink)}
+.logo span{color:var(--berry)}
+nav ul{display:flex;gap:26px;list-style:none;align-items:center}
+nav ul a{color:var(--ink);font-weight:500;font-size:15px}
+nav ul a:hover{color:var(--berry);text-decoration:none}
+.btn{display:inline-block;background:var(--berry);color:#fff;padding:10px 20px;border-radius:100px;font-weight:600;font-size:15px;border:1.5px solid var(--berry);transition:.2s}
+.btn:hover{background:var(--berry-deep);border-color:var(--berry-deep);text-decoration:none}
+.btn.ghost{background:transparent;color:var(--berry)}
+.btn.ghost:hover{background:var(--blush)}
+
+/* HERO */
+.hero{padding:88px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.35fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(36px,5.2vw,58px);margin:14px 0 20px}
+.hero h1 em{font-style:italic;color:var(--berry)}
+.hero p.lede{font-size:18.5px;color:var(--grey);max-width:56ch}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:26px 0}
+.chip{background:var(--sand);border:1px solid var(--line);border-radius:100px;padding:6px 14px;font-size:13.5px;font-weight:500}
+.badges{display:flex;gap:12px;margin-top:6px;font-size:14px;font-weight:600}
+.badges span{background:var(--blush);border-radius:8px;padding:6px 12px}
+.hero-cta{display:flex;gap:14px;margin-top:28px}
+
+/* Venture card in hero */
+.vcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 18px 40px -24px rgba(122,22,58,.25)}
+.vcard .eyebrow{display:block;margin-bottom:8px}
+.vcard h3{font-size:26px;margin-bottom:6px}
+.vcard p{font-size:14.5px;color:var(--grey)}
+.vcard .stack{margin-top:16px;display:flex;flex-wrap:wrap;gap:7px}
+.vcard .stack span{font-size:12px;font-weight:600;background:var(--sand);border-radius:6px;padding:4px 9px}
+.pulse{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:700;color:var(--berry);margin-top:16px}
+.pulse i{width:9px;height:9px;border-radius:50%;background:var(--berry);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(166,30,77,.45)}70%{box-shadow:0 0 0 9px rgba(166,30,77,0)}100%{box-shadow:0 0 0 0 rgba(166,30,77,0)}}
+@media (prefers-reduced-motion:reduce){.pulse i{animation:none}html{scroll-behavior:auto}}
+
+/* COMPANIES */
+.companies{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff;padding:44px 0}
+.companies h2{font-size:15px;font-family:var(--body);font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);text-align:center;margin-bottom:28px}
+.co-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.co{border:1px solid var(--line);border-radius:14px;padding:18px;background:var(--ivory)}
+.co b{display:block;font-size:16px}
+.co small{color:var(--grey);font-size:13px;display:block;margin-top:2px}
+.co em{display:block;font-style:normal;font-size:13.5px;margin-top:8px;color:var(--ink)}
+
+/* SPOTLIGHT: Venture */
+.spotlight{background:linear-gradient(180deg,var(--blush),var(--ivory) 70%)}
+.spot-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:start;margin-top:34px}
+h2.title{font-size:clamp(28px,4vw,42px);margin-top:10px}
+.spotlight p.big{font-size:18px;color:var(--grey);margin-top:14px;max-width:60ch}
+.how{margin:26px 0;display:grid;gap:12px}
+.how div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-size:15px}
+.how b{color:var(--berry)}
+.buildlog{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;margin-top:26px}
+.buildlog h4{font-family:var(--body);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey);margin-bottom:14px}
+.buildlog ul{list-style:none}
+.buildlog li{padding:7px 0;border-bottom:1px dashed var(--line);font-size:14.5px;display:flex;gap:10px}
+.buildlog li:last-child{border:0}
+.ok{color:var(--berry);font-weight:700}
+.phone{width:min(300px,100%);margin:0 auto;background:var(--ink);border-radius:36px;padding:12px;box-shadow:0 30px 60px -30px rgba(28,25,23,.5)}
+.screen{background:#fff;border-radius:26px;overflow:hidden;aspect-ratio:9/19;position:relative;display:flex;align-items:center;justify-content:center}
+.screen .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--grey);font-size:13px;text-align:center;padding:20px;background:repeating-linear-gradient(45deg,#FAF6F2,#FAF6F2 12px,#F4EEE7 12px,#F4EEE7 24px)}
+.screen img{position:relative;width:100%;height:100%;object-fit:cover;z-index:2}
+.shot-cap{text-align:center;font-size:13px;color:var(--grey);margin-top:12px}
+.shots-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+.shots-row .mini{border:1px solid var(--line);border-radius:14px;overflow:hidden;aspect-ratio:9/16;position:relative;background:repeating-linear-gradient(45deg,#FAF6F2,#FAF6F2 12px,#F4EEE7 12px,#F4EEE7 24px)}
+.mini .ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:12.5px;color:var(--grey);text-align:center;padding:12px}
+.mini img{position:relative;width:100%;height:100%;object-fit:cover;z-index:2}
+
+/* CASE STUDIES */
+.case{background:#fff;border:1px solid var(--line);border-radius:20px;padding:36px;margin-top:30px}
+.case .tag{display:inline-block;background:var(--blush);color:var(--berry-deep);font-size:12.5px;font-weight:700;border-radius:100px;padding:5px 13px;margin-bottom:14px}
+.case h3{font-size:clamp(22px,3vw,29px);margin-bottom:10px}
+.case p.sub{color:var(--grey);font-size:16px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:24px 0}
+.stat{border:1px solid var(--line);border-left:3px solid var(--berry);border-radius:10px;padding:14px 16px;background:var(--ivory)}
+.stat b{font-family:var(--disp);font-size:26px;display:block;color:var(--berry)}
+.stat small{color:var(--grey);font-size:13px;line-height:1.4;display:block;margin-top:3px}
+details{border-top:1px solid var(--line);margin-top:18px}
+summary{cursor:pointer;font-weight:700;padding:15px 0;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::after{content:"+";font-family:var(--disp);font-size:22px;color:var(--berry)}
+details[open] summary::after{content:"\2212"}
+details .inner{padding:0 0 18px;color:var(--ink);font-size:15.5px}
+details .inner p{margin-bottom:12px}
+details .inner ul{margin:0 0 12px 20px}
+details .inner li{margin-bottom:7px}
+.skills-line{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.skills-line span{font-size:12.5px;font-weight:600;border:1px solid var(--line);border-radius:100px;padding:5px 12px;background:var(--ivory)}
+
+/* SPECIALIZATION */
+.spec-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}
+.spec{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.spec h3{font-size:20px;margin-bottom:8px}
+.spec p{font-size:15px;color:var(--grey)}
+
+/* CONTACT */
+.contact{background:var(--ink);color:var(--ivory);text-align:center;padding:80px 0}
+.contact h2{font-size:clamp(28px,4vw,42px);color:#fff}
+.contact p{color:#C9C2BB;max-width:52ch;margin:16px auto 30px}
+.contact .btn{background:var(--ivory);color:var(--ink);border-color:var(--ivory)}
+.contact .btn:hover{background:#fff}
+footer{background:var(--ink);color:#8A837C;text-align:center;font-size:13.5px;padding:22px 0;border-top:1px solid #33302C}
+footer a{color:#C9C2BB}
+
+@media (max-width:860px){
+  .hero .wrap,.spot-grid{grid-template-columns:1fr;gap:36px}
+  .co-grid,.spec-grid{grid-template-columns:1fr 1fr}
+  .stats{grid-template-columns:1fr}
+  nav ul li.hidem{display:none}
+  section{padding:52px 0}
+}
+@media (max-width:560px){.co-grid,.spec-grid{grid-template-columns:1fr}.shots-row{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Rashika<span>.</span></a>
+    <ul>
+      <li class="hidem"><a href="#venture">Venture</a></li>
+      <li class="hidem"><a href="#cases">Case Studies</a></li>
+      <li class="hidem"><a href="resume.html">Resume</a></li>
+      <li><a class="btn" href="mailto:rashika.bindal@gmail.com">Get in Touch</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Product Manager · AI, Commerce &amp; Consumer Products</span>
+      <h1>Building products people <em>discover</em>, love, and <em>re-buy</em>.</h1>
+      <p class="lede">I’m Rashika Bindal, a Product Manager with 6+ years shipping products at American Express, Citibank and HSBC. Right now I’m also building something of my own: a consumer AI venture, in stealth, written line by line with my own hands.</p>
+      <div class="chips">
+        <span class="chip">0→1 Product Launches</span>
+        <span class="chip">AI-Fluent Builder</span>
+        <span class="chip">Discovery &amp; Commerce</span>
+        <span class="chip">SQL &amp; Analytics</span>
+        <span class="chip">Stakeholder Leadership</span>
+      </div>
+      <div class="badges"><span>🇦🇪 Relocating to Dubai</span><span>🇮🇳 Open to India</span></div>
+      <div class="hero-cta">
+        <a class="btn" href="#dresstok">See what I'm building</a>
+        <a class="btn ghost" href="resume.html">View Resume</a>
+      </div>
+    </div>
+    <aside class="vcard">
+      <span class="eyebrow">Current Venture</span>
+      <h3>In stealth.</h3>
+      <p>A 0→1 consumer AI product for a visual, brand-led category, built solo: real authentication, a real data layer, a real AI core, a real community experience. Not a mockup, not a deck. The details stay private until launch, but I demo it gladly in person.</p>
+      <div class="stack"><span>Next.js</span><span>Supabase</span><span>Applied AI</span><span>Cursor</span></div>
+      <span class="pulse"><i></i>In active build: founder, PM &amp; builder</span>
+    </aside>
+  </div>
+</header>
+
+<div class="companies">
+  <div class="wrap">
+    <h2>Companies I've shipped with</h2>
+    <div class="co-grid">
+      <div class="co"><b>American Express</b><small>via EY · 2024 to 2026</small><em>Compliance data platform &amp; AI enablement</em></div>
+      <div class="co"><b>Citibank India</b><small>2020 to 2023</small><em>0→1 digital account opening pilot</em></div>
+      <div class="co"><b>HSBC</b><small>2023</small><em>Data pipeline diagnostics &amp; UAT</em></div>
+      <div class="co"><b>Uptitude</b><small>2024</small><em>Data validation &amp; anomaly detection</em></div>
+    </div>
+  </div>
+</div>
+
+<section class="spotlight" id="venture">
+  <div class="wrap">
+    <span class="eyebrow">Featured Venture · 0→1 · Founder &amp; Product Builder</span>
+    <h2 class="title">I’m building something. I can’t tell you what yet.</h2>
+    <p class="big">What I can tell you: it lives at the intersection of <b>AI, discovery and commerce</b>, in a category people feel strongly about. And it answers the question every consumer platform is chasing right now: how do people <b>discover, decide, and come back</b>?</p>
+    <div class="spot-grid">
+      <div>
+        <p><b>Why build it myself?</b> Because a PM who has personally shipped authentication, storage, an AI pipeline and a live community feed talks to engineers differently, scopes differently, and de-risks ideas before a single sprint is spent. No-code tools can paint a beautiful facade in one prompt. I chose to build the engine.</p>
+        <div class="buildlog">
+          <h4>Build log: what’s real and working today</h4>
+          <ul>
+            <li><span class="ok">✓</span> User accounts and secure sessions, live</li>
+            <li><span class="ok">✓</span> The AI core of the experience, working on real inputs</li>
+            <li><span class="ok">✓</span> A real dataset behind it, verified and production-ready</li>
+            <li><span class="ok">✓</span> Media upload, processing and publish pipeline</li>
+            <li><span class="ok">✓</span> A public community feed with the signature interaction</li>
+            <li><span class="ok">⟳</span> Visual identity and first user-testing round, in progress</li>
+          </ul>
+        </div>
+        <p style="margin-top:22px"><b>Want the full story?</b> I walk people through the live product in private demos. Fifteen minutes, my screen, everything working.</p>
+        <p style="margin-top:16px"><a class="btn" href="mailto:rashika.bindal@gmail.com?subject=Private%20demo%20request">Request a private demo</a></p>
+        <div class="skills-line">
+          <span>Product Vision &amp; Strategy</span><span>AI Prototyping (Cursor + Claude)</span><span>Consumer Discovery</span><span>Incentive Design</span><span>Full-stack Shipping</span>
+        </div>
+      </div>
+      <div>
+        <div class="phone">
+          <div class="screen">
+            <div class="ph" style="background:repeating-linear-gradient(45deg,#F3E4EA,#F3E4EA 12px,#EED9E1 12px,#EED9E1 24px)">
+              <span style="font-size:34px">🔒</span>
+              <b style="font-size:15px;color:#7A163A">In stealth</b>
+              <span>The product is real and running.<br>Ask me for a demo.</span>
+            </div>
+          </div>
+        </div>
+        <p class="shot-cap">Screenshots stay private until launch</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="cases">
+  <div class="wrap">
+    <span class="eyebrow">Case Studies</span>
+    <h2 class="title">Shipped inside some of the world's most regulated companies</h2>
+
+    <article class="case">
+      <span class="tag">Citibank India · 0→1 Pilot → Live Launch</span>
+      <h3>Suvidha Digital: taking salary account opening from paper to platform</h3>
+      <p class="sub">Led the end-to-end pilot of a digital account-opening product that eliminated manual fraud risks, cut entity onboarding from 10+ days to under 48 hours, and went live across select cities.</p>
+      <div class="stats">
+        <div class="stat"><b>10d → 48h</b><small>Entity onboarding time for new corporates</small></div>
+        <div class="stat"><b>Zero</b><small>Physical document handling. The primary fraud vector, removed</small></div>
+        <div class="stat"><b>Live</b><small>Shipped from pilot to production across select cities</small></div>
+      </div>
+      <details>
+        <summary>The problem: a pre-digital process meeting a 2020 world</summary>
+        <div class="inner">
+          <p>Suvidha is Citibank's salary account product for employees of corporate partners like TCS, L&amp;T Mindtree and EY. The entire process was manual: kits checked out of the bank vault, Aadhaar and PAN documents physically handled at corporate sites, paper forms with transcription errors, and an outsourced FATCA check on every application. COVID made on-site collection impossible overnight, and I was given the mandate to build and pilot the digital replacement.</p>
+          <p>The hardest failure point: large Indian corporates operate as multiple legal entities (EY India, EY LLP, EY GDS…), each needing its own organisation code. If a banker visited an unregistered entity, listing it took 10+ days, and the customer was lost.</p>
+        </div>
+      </details>
+      <details>
+        <summary>The product decisions that made it work</summary>
+        <div class="inner">
+          <ul>
+            <li><b>Real-time entity tagging:</b> organisation code lookup reflecting the latest onboarded entities with no lag.</li>
+            <li><b>Dummy code + HR attestation fallback:</b> unrecognised entities got a 0000 code with an attested approval doc, preserving the application instead of losing the customer at the point of highest intent.</li>
+            <li><b>48-hour entity onboarding SLA:</b> the hardest internal negotiation; won by reframing it as revenue protection, not process change.</li>
+            <li><b>Inline FATCA:</b> declaration built into the digital form, eliminating the third-party outsourcing step entirely.</li>
+          </ul>
+          <p>Every pilot iteration was driven by a specific field failure reported by bankers. Real feedback over internal opinion, every time.</p>
+        </div>
+      </details>
+      <div class="skills-line"><span>0→1 Pilot Leadership</span><span>KYC &amp; Compliance Design</span><span>Field Research</span><span>GTM &amp; Adoption</span><span>Fraud &amp; Process Design</span></div>
+    </article>
+
+    <article class="case">
+      <span class="tag">American Express · via EY · Compliance Platform</span>
+      <h3>DLM Gold Simulation: preventing compliance failures before they happen</h3>
+      <p class="sub">Shipped a dry-run capability for Amex's Data Lifecycle Management platform that cut execution failures by ~50% and gave compliance teams ~90% scheduling accuracy for the first time.</p>
+      <div class="stats">
+        <div class="stat"><b>~50%</b><small>Reduction in annual DLM production failures</small></div>
+        <div class="stat"><b>~90%</b><small>Execution-time estimation accuracy, enabling optimized scheduling</small></div>
+        <div class="stat"><b>7 to 9 days</b><small>End-to-end compliance cycle the failures used to burn</small></div>
+      </div>
+      <details>
+        <summary>The problem: failures only surfaced when it was already too late</summary>
+        <div class="inner">
+          <p>DLM is Amex's compliance-critical deletion utility, the system that answers "when is data no longer allowed to exist, and how do we prove we deleted it?" The full cycle took 7 to 9 days of cross-functional effort, and the only failure signal was a post-execution email. Unoptimized SQL, memory exhaustion and misconfigured rules surfaced with zero prior warning; teams were building informal buffer time into compliance calendars just to absorb re-runs.</p>
+        </div>
+      </details>
+      <details>
+        <summary>The product thinking behind the fix</summary>
+        <div class="inner">
+          <ul>
+            <li><b>Shell script over a UI:</b> plugged into existing user workflows with zero new infrastructure or access provisioning. Adoption speed beat elegance.</li>
+            <li><b>Execution-time output as a core feature:</b> not just pass/fail; it solved the user's problem and the DLM team's scheduling problem simultaneously.</li>
+            <li><b>Self-serve testing:</b> users could validate SQL independently, removing the DLM team as a single point of dependency.</li>
+            <li><b>Supported rollout:</b> a squad-assisted launch model meant the utility went live with no support-ticket spike.</li>
+          </ul>
+          <p>Prioritisation rule: every user complaint was mapped to prevent-failure, reduce-dependency, or improve-scheduling. Features hitting all three shipped first.</p>
+        </div>
+      </details>
+      <div class="skills-line"><span>Product Requirements</span><span>Compliance Products</span><span>User Discovery</span><span>SQL &amp; Data Architecture</span><span>Change Management</span></div>
+    </article>
+
+    <article class="case">
+      <span class="tag">American Express · AI Platform Enablement</span>
+      <h3>Enabling GenAI at scale: 72 data pipelines into LUMI</h3>
+      <p class="sub">Coordinated the migration of 72 data files from business units across the bank into LUMI, Amex's next-gen cloud-native AI platform, treating migration as a product problem, not a technical task.</p>
+      <div class="stats">
+        <div class="stat"><b>72</b><small>Data pipelines validated for quality, governance and ingestion standards</small></div>
+        <div class="stat"><b>$300M</b><small>Annual AWS spend the platform was built to solve</small></div>
+        <div class="stat"><b>15,000+</b><small>Internal data users relying on the platform downstream</small></div>
+      </div>
+      <details>
+        <summary>Why this was a product problem</summary>
+        <div class="inner">
+          <p>Most AI failures happen at the data layer, not the model layer. A state-of-the-art GenAI model fed stale or wrongly-permissioned data produces outputs that are dangerous because they carry false confidence. Migration had users (the AI systems), requirements (governance standards), stakeholders (72 business-unit owners) and outcomes (GenAI use cases like real-time personalised offers that worked or failed on what we delivered).</p>
+          <ul>
+            <li>Sequenced migration by downstream AI use-case priority, not department order.</li>
+            <li>Handled quality gaps with time-bound remediation paths instead of blocking the platform.</li>
+            <li>Completed governance metadata (lineage, privacy classification, access permissions) for every dataset before ingestion.</li>
+          </ul>
+        </div>
+      </details>
+      <div class="skills-line"><span>AI Platform Enablement</span><span>Data Governance</span><span>GenAI Use-case Thinking</span><span>Cross-unit Stakeholder Management</span></div>
+    </article>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="eyebrow">How I Work</span>
+    <h2 class="title">Areas of specialization</h2>
+    <div class="spec-grid">
+      <div class="spec"><h3>AI-fluent building</h3><p>I don't wait for engineering to pressure-test an idea. I vibe-code working prototypes in Cursor with AI copilots, then hand over something real. My stealth venture is the proof: auth, data layer, AI core and community feed, all built solo and all working.</p></div>
+      <div class="spec"><h3>Discovery-led commerce</h3><p>Visual, brand-led categories don't behave like grocery. I think in shopper missions: how people discover, evaluate, and re-buy, and design the product mechanics around that journey.</p></div>
+      <div class="spec"><h3>0→1 in complex environments</h3><p>Launched a digital pilot inside Citibank's compliance machinery and shipped a new capability on Amex's regulatory platform. Startup speed, enterprise stakes.</p></div>
+      <div class="spec"><h3>Data-driven decisions</h3><p>Confident running my own analysis in SQL, Python, Power BI and Tableau. KPI strategy at Citibank drove a 25% adoption lift and ~$500K in cross-sell revenue impact.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow" style="color:#E8A9C0">Let's talk</span>
+    <h2>Let's build something people re-buy.</h2>
+    <p>I'm relocating to Dubai and looking to build 0→1 consumer products in commerce, beauty and AI. If that sounds like your team, I'd love to talk.</p>
+    <a class="btn" href="mailto:rashika.bindal@gmail.com">rashika.bindal@gmail.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Rashika Bindal · <a href="https://www.linkedin.com/in/rashika-bindal-98887782/">LinkedIn</a> · <a href="mailto:rashika.bindal@gmail.com">Email</a> · <a href="resume.html">Resume</a></div>
+</footer>
+</body>
+</html>
